@@ -22,7 +22,7 @@ namespace Games.Validator
                 .MaximumLength(100);
 
             RuleFor(p => p.Preco)
-                .NotEmpty()
+                .NotNull()
                 .GreaterThan(0);
 
             RuleFor(p => p.Foto)
